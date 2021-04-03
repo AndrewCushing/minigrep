@@ -29,7 +29,7 @@ pub fn run(args: Vec<String>) {
     let mut line_num = 1;
     for x in lines {
         if x.contains(searching_for) {
-            println!("Matched line {}", line_num);
+            println!("Matched line {}:", line_num);
             println!("{}", x);
         }
         line_num += 1;
