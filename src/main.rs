@@ -8,7 +8,8 @@ fn main() {
     let args: Vec<String> = env::args().collect();
 
     if args.len() < 3 {
-        panic!("2 command line args required")
+        println!("Usage:");
+        println!("minigrep search_string filename");
     }
 
     run(args);
